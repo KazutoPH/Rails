@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .main-container {
+    @apply flex min-h-screen flex-1 flex-col items-center px-6 pb-10 pt-28 max-md:pb-32 sm:px-10;
+  }
+
+  .content-container {
+    @apply flex px-10 py-6 w-full lg:px-6 max-w-7xl
+  }
+
+  .topbar {
+    @apply z-30 flex w-full items-center justify-between px-6 py-10 max-w-7xl;
+  }
+
+  .contact_btn {
+    @apply flex rounded-full border-2 border-purple py-2 px-2 w-32 items-center text-purple justify-center hover:bg-purple hover:text-light duration-300
+  }
+
+  .btn1 {
+    @apply flex rounded-full border-2 border-purple bg-purple py-2 px-2 w-52 items-center justify-center text-light hover:bg-white hover:text-purple duration-300
+  }
+
+  .banner {
+    @apply w-full bg-purple
+  }
+
+  .bggradientimg {
+    @apply 
+    relative
+		w-full
+    bg-[url('/assets/Background2.png')]
+    bg-cover
+    bg-no-repeat
+    bg-center
+    z-0
+  }
+
+  .bggradient {
+    @apply
+    absolute
+    w-full
+    h-full
+    top-0
+    right-0
+    left-0
+    bottom-0
+    bg-gradient-to-r
+    from-[#010101]
+    to-[#0000001f]
+    z-10
+  }
+
+  .txtinput {
+    @apply rounded-md border border-[#C1C2C2] px-2 py-1 text-inherit text-light bg-transparent  outline-none !important;
+  }
+}
